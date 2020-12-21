@@ -5,14 +5,16 @@ export const ButtonContainer = styled.button`
     height: 42px;
     padding: 12px 16px;
     border-radius: 2px;
-    background-color: #5cb646;
+    background-color: ${(props) =>
+    props.logout ? "#e02020" : "#5cb646"};
     border:none;
     cursor: pointer;
     :focus {
     outline: none;
     }
     :hover{
-        background-color: rgba(92, 182, 70, 0.5);
+        background-color:${(props) =>
+    props.logout ? "rgba(224, 32, 33, 0.5)" : "rgba(92, 182, 70, 0.5)"} ;
     }
     font-size: 16px;
     line-height: normal;
@@ -20,4 +22,4 @@ export const ButtonContainer = styled.button`
     color: #000000;
 
 
-}`
+}`;

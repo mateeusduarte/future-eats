@@ -1,3 +1,11 @@
+import { Header } from "../components/Header";
+import { useProtectPage } from "../hooks/useProtectPage";
+
 export function RestaurantDetails() {
-  return <h1>RestaurantDetails</h1>;
+  useProtectPage()
+  return (
+    <div>
+      <Header backIcon="true" text="Restaurante" />
+    </div>
+  );
 }

@@ -1,3 +1,13 @@
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+import { useProtectPage } from "../hooks/useProtectPage";
+
 export function EditProfile() {
-  return <h1>EditProfile</h1>;
+  useProtectPage()
+  return (
+    <div>
+      <Header backIcon="true" text="Editar" />
+      <Footer profileActive="true" />
+    </div>
+  );
 }
