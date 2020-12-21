@@ -9,24 +9,23 @@ import { useEffect } from "react";
 import { onSubmitForm } from "../constants/preventDefault";
 import { signup } from "../services/signup";
 import { useHistory } from "react-router-dom";
+import { useLoggedUser } from "../hooks/useLoggedUser";
 
 export function SignUp() {
-  const history = useHistory()
+  useLoggedUser();
+  const history = useHistory();
   const { form, onChange } = useForm({
     name: "",
     email: "",
     cpf: "",
     password: "",
-    confirmedPassword:""
+    confirmedPassword: "",
   });
 
-  useEffect(()=>{
-    checkPassword()
-  }, [form.confirmedPassword, form.password])
- 
-  
+  useEffect(() => {
+    checkPassword();
+  }, [form.confirmedPassword, form.password]);
 
-  
   const [isConfirmed, setIsConfirmed] = useState();
 
   const handleInputChange = (event) => {
@@ -34,12 +33,11 @@ export function SignUp() {
     onChange(name, value);
   };
   const checkPassword = () => {
-    if(form.confirmedPassword === form.password){
+    if (form.confirmedPassword === form.password) {
       return setIsConfirmed(false);
     }
     return setIsConfirmed(true);
-  }
- 
+  };
 
   return (
     <div>
@@ -47,7 +45,7 @@ export function SignUp() {
       <FormContainer>
         <img src={Logo} />
         <h1>Cadastrar</h1>
-        <form  onSubmit={onSubmitForm}>
+        <form onSubmit={onSubmitForm}>
           <Input
             value={form.name}
             name="name"
@@ -96,7 +94,10 @@ export function SignUp() {
             onChange={handleInputChange}
             isConfirmed={isConfirmed}
           />
-          <Button text="Entrar" onClick={() => signup(form, history, isConfirmed)} />
+          <Button
+            text="Entrar"
+            onClick={() => signup(form, history, isConfirmed)}
+          />
         </form>
       </FormContainer>
     </div>

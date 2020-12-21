@@ -10,10 +10,10 @@ import { ChooseQuantityCardContainer } from "../styles/components/ChooseQuantity
 import { ItemCardContainer } from "../styles/components/ItemCardContainer";
 
 export function Feed() {
-  useProtectPage()
+  useProtectPage();
   return (
     <div>
-      <Header backIcon="true" text="Feed" />
+      <Header text="Feed" />
       <RestaurantCard />
 
       <Footer homeActive="true" />

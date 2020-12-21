@@ -6,9 +6,11 @@ import { useForm } from "../hooks/useForm";
 import { onSubmitForm } from "../constants/preventDefault";
 import { putAddress } from "../services/putAddress";
 import { useHistory } from "react-router-dom";
+import { useLoggedUser } from "../hooks/useLoggedUser";
 
 export function AddAddress() {
-  const history = useHistory()
+  useLoggedUser();
+  const history = useHistory();
   const { form, onChange } = useForm({
     street: "",
     number: "",

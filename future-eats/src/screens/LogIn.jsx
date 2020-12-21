@@ -10,10 +10,12 @@ import { useContext } from "react";
 import GlobalStateContext from "../global/GlobalStateContext";
 import { onSubmitForm } from "../constants/preventDefault";
 import { login } from "../services/login";
+import { useLoggedUser } from "../hooks/useLoggedUser";
 
 export function Login() {
+  useLoggedUser();
   const history = useHistory();
-  
+
   const { form, onChange } = useForm({ email: "", password: "" });
 
   const handleInputChange = (event) => {
@@ -48,7 +50,6 @@ export function Login() {
       </form>
       <p>
         Não possui cadastro?{" "}
-
         <strong onClick={() => goToSignUp(history)}>Clique aqui.</strong>
       </p>
     </FormContainer>

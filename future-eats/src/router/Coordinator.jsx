@@ -23,5 +23,5 @@ export const goToFeed = (history) => {
 };
 
 export const goToAddAddress = (history) => {
-  history.push("/add-address")
-}
+  history.push("/add-address");
+};

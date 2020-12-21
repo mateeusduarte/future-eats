@@ -1,10 +1,9 @@
 import GlobalStateContext from "./GlobalStateContext";
 import React from "react";
 import Axios from "axios";
-import {baseUrl} from "../constants/baseUrl"
+import { baseUrl } from "../constants/baseUrl";
 
 const GlobalState = (props) => {
- 
   const states = {};
   const setters = {};
   const requests = {};

@@ -6,17 +6,17 @@ import { useProtectPage } from "../hooks/useProtectPage";
 import { goToLoginPage } from "../router/Coordinator";
 
 export function Profile() {
-  useProtectPage()
-  const history = useHistory()
+  useProtectPage();
+  const history = useHistory();
   const onClickLogout = () => {
-    localStorage.removeItem("token")
-    console.log("Token removido")
-    goToLoginPage(history)
-  }
+    localStorage.removeItem("token");
+    console.log("Token removido");
+    goToLoginPage(history);
+  };
   return (
     <div>
       <Header backIcon="true" text="Meu perfil" />
-      <Button onClick={onClickLogout} text="Sair" logout="true"/>
+      <Button onClick={onClickLogout} text="Sair" logout="true" />
       <Footer profileActive="true" />
     </div>
   );

@@ -1,7 +1,7 @@
 import { token } from "./token";
 
 export const headers = {
-    headers: {
-        auth: token
-    }
-}
+  headers: {
+    auth: token,
+  },
+};
