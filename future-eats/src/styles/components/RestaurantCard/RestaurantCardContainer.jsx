@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const RestaurantCardContainer = styled.div`
   width: 328px;
@@ -8,7 +8,7 @@ export const RestaurantCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   img {
     width: 328px;
     height: 120px;

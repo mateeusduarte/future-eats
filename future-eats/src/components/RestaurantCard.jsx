@@ -1,15 +1,15 @@
-import { InfoContainer } from "../styles/components/RestaurantCard/InfoContainer";
-import { RestaurantCardContainer } from "../styles/components/RestaurantCard/RestaurantCardContainer";
+import { InfoContainer } from '../styles/components/RestaurantCard/InfoContainer';
+import { RestaurantCardContainer } from '../styles/components/RestaurantCard/RestaurantCardContainer';
 
-export function RestaurantCard() {
+export function RestaurantCard(props) {
   return (
     <RestaurantCardContainer>
-      <img src="https://www.sopacultural.com/wp-content/uploads/2020/04/Bullguer.jpg" />
+      <img src={props.logoUrl} />
       <InfoContainer>
-        <h2>Vinil Butantã</h2>
+        <h2>{props.name}</h2>
         <div>
-          <p>50 - 60 min</p>
-          <p>Frete R$6,00</p>
+          <p>{props.deliveryTime} min</p>
+          <p>Frete R${props.shipping},00</p>
         </div>
       </InfoContainer>
     </RestaurantCardContainer>

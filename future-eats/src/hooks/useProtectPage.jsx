@@ -1,12 +1,11 @@
-import { useEffect } from "react";
-import { useHistory } from "react-router-dom";
-import { goToLoginPage } from "../router/Coordinator";
-import { token } from "../constants/token";
+import { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import { goToLoginPage } from '../router/Coordinator';
 
 export const useProtectPage = () => {
   const history = useHistory();
   useEffect(() => {
-    if (!token) {
+    if (!localStorage.getItem('token')) {
       goToLoginPage(history);
     }
   }, [history]);

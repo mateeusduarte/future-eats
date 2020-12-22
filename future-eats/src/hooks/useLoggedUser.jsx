@@ -1,12 +1,11 @@
-import { useEffect } from "react";
-import { useHistory } from "react-router-dom";
-import { goToFeed } from "../router/Coordinator";
-import { token } from "../constants/token";
+import { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
+import { goToFeed } from '../router/Coordinator';
 
 export const useLoggedUser = () => {
   const history = useHistory();
   useEffect(() => {
-    if (token) {
+    if (localStorage.getItem('token')) {
       goToFeed(history);
     }
   }, [history]);

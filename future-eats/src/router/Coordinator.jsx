@@ -1,5 +1,5 @@
 export const goToLoginPage = (history) => {
-  history.push("/login");
+  history.push('/login');
 };
 
 export const goBack = (history) => {
@@ -7,21 +7,25 @@ export const goBack = (history) => {
 };
 
 export const goToSignUp = (history) => {
-  history.push("/signup");
+  history.push('/signup');
 };
 
 export const goToCart = (history) => {
-  history.push("/cart");
+  history.push('/cart');
 };
 
 export const goToProfile = (history) => {
-  history.push("/profile");
+  history.push('/profile');
 };
 
 export const goToFeed = (history) => {
-  history.push("/feed");
+  history.push('/feed');
 };
 
 export const goToAddAddress = (history) => {
-  history.push("/add-address");
+  history.push('/add-address');
+};
+
+export const goToSearch = (history) => {
+  history.push('/search');
 };
