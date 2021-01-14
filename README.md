@@ -54,8 +54,8 @@
   
   <h2>Design</h2>
   <p>This application's design was done by the tech-ed company, Labenu.</p>
-  <h3>Responsiveness<h3>
-  <p>The application was designed to be a mobile application, therefore it works better on phones. However I adapted a little bit so the design fits better on a laptop.</p>
+  <h3>Responsiveness</h3>
+  <p>The application was designed to be a mobile application, therefore it works better on phones. However I adapted a little bit in order for the design to fit better on a laptop.</p>
   
   <h2>Images</h2>
   <p>This link contains screenshots of the main screens on the project: https://www.notion.so/FutureEats-Screenshots-8c1d56e295a14915b6adafca06eb7942 </p>
