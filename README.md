@@ -1,6 +1,6 @@
 <h1> future-eats </h1>
 
-<h2> About the project </2>
+<h2> About the project </h2>
 <p> This project was done during my front-end bootcamp, it is inspired by the UberEats design and it was done to practice my React skills.</p>
  
 </br>
