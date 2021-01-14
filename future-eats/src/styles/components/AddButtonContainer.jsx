@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AddButtonContainer = styled.button`
   position: relative;
@@ -7,10 +7,11 @@ export const AddButtonContainer = styled.button`
   border-top-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border: solid 1px #5cb646;
-  width: 120px;
+  width: 90px;
   height: 31px;
   background-color: white;
   color: #5cb646;
+  cursor:pointer;
   :focus {
     outline: none;
   }

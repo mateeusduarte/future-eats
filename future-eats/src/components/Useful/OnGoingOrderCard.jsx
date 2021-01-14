@@ -1,5 +1,5 @@
-import { OnGoingOrderContainer } from "../styles/components/OnGoingOrderContainer";
-import Clock from "../assets/clock.svg";
+import { OnGoingOrderContainer } from '../../styles/components/OnGoingOrderContainer';
+import Clock from '../../assets/clock.svg';
 export function OnGoingOrderCard() {
   return (
     <OnGoingOrderContainer>

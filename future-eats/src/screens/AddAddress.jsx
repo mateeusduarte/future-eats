@@ -1,23 +1,23 @@
-import { Header } from "../components/Header";
-import { Input } from "../components/Input";
-import { Button } from "../components/Button";
-import { FormContainer } from "../styles/screens/FormContainer";
-import { useForm } from "../hooks/useForm";
-import { onSubmitForm } from "../constants/preventDefault";
-import { putAddress } from "../services/putAddress";
-import { useHistory } from "react-router-dom";
-import { useLoggedUser } from "../hooks/useLoggedUser";
+import { Header } from '../components/Useful/Header';
+import { Input } from '../components/Useful/Input';
+import { Button } from '../components/Useful/Button';
+import { FormContainer } from '../styles/screens/FormContainer';
+import { useForm } from '../hooks/useForm';
+import { onSubmitForm } from '../constants/preventDefault';
+import { putAddress } from '../services/putAddress';
+import { useHistory } from 'react-router-dom';
+import { useLoggedUser } from '../hooks/useLoggedUser';
+import { goToFeed } from '../router/Coordinator';
 
 export function AddAddress() {
-  useLoggedUser();
   const history = useHistory();
   const { form, onChange } = useForm({
-    street: "",
-    number: "",
-    complement: "",
-    neighbourhood: "",
-    city: "",
-    state: "",
+    street: '',
+    number: '',
+    complement: '',
+    neighbourhood: '',
+    city: '',
+    state: '',
   });
 
   const handleInputChange = (event) => {
@@ -83,7 +83,10 @@ export function AddAddress() {
             required="true"
             onChange={handleInputChange}
           />
-          <Button text="Entrar" onClick={() => putAddress(form, history)} />
+          <Button
+            text="Criar"
+            onClick={() => putAddress(form, history, goToFeed, true)}
+          />
         </form>
       </FormContainer>
     </div>

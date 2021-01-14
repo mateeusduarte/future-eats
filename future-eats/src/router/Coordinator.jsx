@@ -29,3 +29,15 @@ export const goToAddAddress = (history) => {
 export const goToSearch = (history) => {
   history.push('/search');
 };
+
+export const goToRestaurantDetails = (history, id) => {
+  history.push(`/restaurant-details/${id}`);
+};
+
+export const goToEditAddress = (history) => {
+  history.push('/edit-address');
+};
+
+export const goToEditProfile = (history) => {
+  history.push('/edit-profile');
+};

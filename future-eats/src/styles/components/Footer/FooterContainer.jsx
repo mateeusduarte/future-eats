@@ -11,4 +11,5 @@ export const FooterContainer = styled.footer`
   justify-content: space-around;
   z-index: 1;
   background-color: white;
+ 
 `;

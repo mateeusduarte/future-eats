@@ -1,13 +1,22 @@
-import styled from "styled-components";
-import DropDown from "../../assets/dropdown.svg";
+import styled from 'styled-components';
+import DropDown from '../../assets/dropdown.svg';
+import {device} from '../../constants/breakpoints'
 export const ChooseQuantityCardContainer = styled.div`
+
+  margin:auto;
+  left:0;
+  position: fixed;
+  top: 40vh;
+  right:0;
   width: 328px;
   height: 216px;
-  margin: 27px 16px 29px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid gray;
+  background-color: white;
 
   h1 {
     font-size: 16px;
@@ -33,6 +42,7 @@ export const ChooseQuantityCardContainer = styled.div`
   }
   p {
     color: #5cb646;
+    cursor:pointer;
     font-size: 16px;
     align-self: flex-end;
     margin-right: 16px;

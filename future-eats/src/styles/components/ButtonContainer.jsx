@@ -19,6 +19,7 @@ export const ButtonContainer = styled.button`
     line-height: normal;
     letter-spacing: -0.39px;
     color: #000000;
+    cursor:pointer;
 
 
 }`;

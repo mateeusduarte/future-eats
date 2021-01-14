@@ -7,8 +7,10 @@ export const CategoriesContainer = styled.div`
   margin: 8px auto;
   height: 42px;
   align-items: center;
+ 
   p {
     margin: 8px;
+    cursor:pointer;
     :hover {
       color: #5cb646;
     }

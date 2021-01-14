@@ -1,15 +1,15 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Home } from "../screens/Home";
-import { Login } from "../screens/LogIn";
-import { AddAddress } from "../screens/AddAddress";
-import { SignUp } from "../screens/SignUp";
-import { Feed } from "../screens/Feed";
-import { Cart } from "../screens/Cart";
-import { RestaurantDetails } from "../screens/RestaurantDetails";
-import { Profile } from "../screens/Profile";
-import { EditProfile } from "../screens/EditProfile";
-import { EditAddress } from "../screens/EditAddress";
-import { Search } from "../screens/Search";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Home } from '../screens/Home';
+import { Login } from '../screens/LogIn';
+import { AddAddress } from '../screens/AddAddress';
+import { SignUp } from '../screens/SignUp';
+import { Feed } from '../screens/Feed';
+import { Cart } from '../screens/Cart';
+import { RestaurantDetails } from '../screens/RestaurantDetails';
+import { Profile } from '../screens/Profile';
+import { EditProfile } from '../screens/EditProfile';
+import { EditAddress } from '../screens/EditAddress';
+import { Search } from '../screens/Search';
 
 export function Router() {
   return (
@@ -36,7 +36,7 @@ export function Router() {
         <Route exact path="/cart">
           <Cart />
         </Route>
-        <Route exact path="/restaurant-details">
+        <Route exact path="/restaurant-details/:id">
           <RestaurantDetails />
         </Route>
         <Route exact path="/profile">

@@ -1,4 +1,4 @@
-import { ButtonContainer } from "../styles/components/ButtonContainer";
+import { ButtonContainer } from '../../styles/components/ButtonContainer';
 
 export function Button(props) {
   return (

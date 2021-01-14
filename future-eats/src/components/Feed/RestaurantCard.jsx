@@ -1,9 +1,9 @@
-import { InfoContainer } from '../styles/components/RestaurantCard/InfoContainer';
-import { RestaurantCardContainer } from '../styles/components/RestaurantCard/RestaurantCardContainer';
+import { InfoContainer } from '../../styles/components/RestaurantCard/InfoContainer';
+import { RestaurantCardContainer } from '../../styles/components/RestaurantCard/RestaurantCardContainer';
 
 export function RestaurantCard(props) {
   return (
-    <RestaurantCardContainer>
+    <RestaurantCardContainer onClick={props.onClick}>
       <img src={props.logoUrl} />
       <InfoContainer>
         <h2>{props.name}</h2>

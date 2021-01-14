@@ -9,6 +9,7 @@ export const RestaurantCardContainer = styled.div`
   flex-direction: column;
   margin: auto;
   margin-top: 10px;
+  cursor:pointer;
   img {
     width: 328px;
     height: 120px;

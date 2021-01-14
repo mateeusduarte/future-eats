@@ -1,25 +1,25 @@
-import { Button } from "../components/Button";
-import { Header } from "../components/Header";
-import { Input } from "../components/Input";
-import { FormContainer } from "../styles/screens/FormContainer";
-import Logo from "../assets/logo-blackfont.png";
-import { useForm } from "../hooks/useForm";
-import { useState } from "react";
-import { useEffect } from "react";
-import { onSubmitForm } from "../constants/preventDefault";
-import { signup } from "../services/signup";
-import { useHistory } from "react-router-dom";
-import { useLoggedUser } from "../hooks/useLoggedUser";
+import { Button } from '../components/Useful/Button';
+import { Header } from '../components/Useful/Header';
+import { Input } from '../components/Useful/Input';
+import { FormContainer } from '../styles/screens/FormContainer';
+import Logo from '../assets/logo-blackfont.png';
+import { useForm } from '../hooks/useForm';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { onSubmitForm } from '../constants/preventDefault';
+import { signup } from '../services/signup';
+import { useHistory } from 'react-router-dom';
+import { useLoggedUser } from '../hooks/useLoggedUser';
 
 export function SignUp() {
   useLoggedUser();
   const history = useHistory();
   const { form, onChange } = useForm({
-    name: "",
-    email: "",
-    cpf: "",
-    password: "",
-    confirmedPassword: "",
+    name: '',
+    email: '',
+    cpf: '',
+    password: '',
+    confirmedPassword: '',
   });
 
   useEffect(() => {
@@ -95,7 +95,7 @@ export function SignUp() {
             isConfirmed={isConfirmed}
           />
           <Button
-            text="Entrar"
+            text="Criar"
             onClick={() => signup(form, history, isConfirmed)}
           />
         </form>

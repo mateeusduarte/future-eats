@@ -1,22 +1,19 @@
-import { Button } from "../components/Button";
-import { Header } from "../components/Header";
-import { Input } from "../components/Input";
-import Logo from "../assets/logo-blackfont.png";
-import { FormContainer } from "../styles/screens/FormContainer";
-import { useHistory } from "react-router-dom";
-import { goToSignUp } from "../router/Coordinator";
-import { useForm } from "../hooks/useForm";
-import { useContext } from "react";
-import GlobalStateContext from "../global/GlobalStateContext";
-import { onSubmitForm } from "../constants/preventDefault";
-import { login } from "../services/login";
-import { useLoggedUser } from "../hooks/useLoggedUser";
+import { Button } from '../components/Useful/Button';
+import { Input } from '../components/Useful/Input';
+import Logo from '../assets/logo-blackfont.png';
+import { FormContainer } from '../styles/screens/FormContainer';
+import { useHistory } from 'react-router-dom';
+import { goToSignUp } from '../router/Coordinator';
+import { useForm } from '../hooks/useForm';
+import { onSubmitForm } from '../constants/preventDefault';
+import { login } from '../services/login';
+import { useLoggedUser } from '../hooks/useLoggedUser';
 
 export function Login() {
   useLoggedUser();
   const history = useHistory();
 
-  const { form, onChange } = useForm({ email: "", password: "" });
+  const { form, onChange } = useForm({ email: '', password: '' });
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -49,7 +46,7 @@ export function Login() {
         <Button text="Entrar" onClick={() => login(form, history)} />
       </form>
       <p>
-        Não possui cadastro?{" "}
+        Não possui cadastro?{' '}
         <strong onClick={() => goToSignUp(history)}>Clique aqui.</strong>
       </p>
     </FormContainer>

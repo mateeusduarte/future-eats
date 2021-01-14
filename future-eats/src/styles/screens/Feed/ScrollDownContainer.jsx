@@ -1,8 +1,13 @@
 import styled from 'styled-components';
-import breakpoint from '../../../constants/breakpoints';
+import breakpoint, { device } from '../../../constants/breakpoints';
 
 export const ScrollDownContainer = styled.main`
   overflow-y: scroll;
-  height: 100vh;
+  height: ${(props) => (props.profileScreen ? '40vh' : '100vh')};
   z-index: -999;
+  @media ${device.laptop}{
+    height:55vh;
+  }
+  width:328px;
+  margin:auto;
 `;

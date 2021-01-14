@@ -1,28 +1,40 @@
-import { InputContainer } from "../styles/components/InputContainer";
-import { useState } from "react";
-import Unhide from "../assets/unhide-password.svg";
-import Hide from "../assets/hide-password.svg";
+import { InputContainer } from '../../styles/components/InputContainer';
+import { useState } from 'react';
+import Unhide from '../../assets/unhide-password.svg';
+import Hide from '../../assets/hide-password.svg';
 
 export function Input(props) {
   const [typeInput, setTypeInput] = useState(props.type);
 
   // Função que renderiza icone de senha conforme o tipo do input
   const renderPasswordIcon = () => {
-    if (typeInput === "password") {
-      return <img src={Unhide} onClick={changeTypeInputToEmpty} />;
+    if (typeInput === 'password') {
+      return (
+        <img
+          src={Unhide}
+          onClick={changeTypeInputToEmpty}
+          alt="Icone Ver Senha"
+        />
+      );
     }
 
-    if (typeInput === "") {
-      return <img src={Hide} onClick={changeTypeInputToPassword} />;
+    if (typeInput === '') {
+      return (
+        <img
+          src={Hide}
+          onClick={changeTypeInputToPassword}
+          alt="Icone Ocultar Senha"
+        />
+      );
     }
   };
 
   // Funções que setam se a senha é visivel ou não
   const changeTypeInputToEmpty = () => {
-    setTypeInput("");
+    setTypeInput('');
   };
   const changeTypeInputToPassword = () => {
-    setTypeInput("password");
+    setTypeInput('password');
   };
 
   // Função que ve se o input é required ou não
