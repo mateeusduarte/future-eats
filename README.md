@@ -6,6 +6,7 @@
 </br>
 <h2>Surge url:</h2>
 [oi](large-dirt.surge.sh)
+see documentation [here](myLib/README.md)
 </br>
 </br>
 <h2>What Technologies were used?</h2>
