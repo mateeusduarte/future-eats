@@ -1,27 +1,27 @@
-<h1> future-eats </h1>
+# future-eats 
 
-<h2> About the project </h2>
-<p> This project was done during my front-end bootcamp, it is inspired by the UberEats design and it was done to practice my React skills.</p>
+## About the project 
+    This project was done during my front-end bootcamp, it is inspired by the UberEats design and it was done to practice my React skills.
  
-</br>
-<h2>Surge url:</h2>
-(large-dirt.surge.sh)
 
-</br>
-</br>
-<h2>What Technologies were used?</h2>
-<p><ul>
-  <li>React</li>
-  <li>Styled-Components</li>
-  <li>Axios</li>
-  <li>React Router</li>
-  <li>React Hooks</li>
-  </ul></p>
+## Surge url:
+
+[Click here](large-dirt.surge.sh)
+
+
+## What Technologies were used?
+
+  * React
+  * Styled-Components
+  * Axios
+  * React Router
+  * React Hooks
+ 
   
-  </br>
   
-  <h2>Installing</h2>
-  <p>In order to install, fork this repository to your profile and then on the repo run the following commands:</p>
+  
+  ## Installing
+ In order to install, fork this repository to your profile and then on the repo run the following commands:
   
   ```
   $ git clone "your repo url"
@@ -29,37 +29,39 @@
   $ npm install
   ```
   
-  <h3>Pre Made User Info</h3>
-  <p>Here is a pre made user info in case you want to try it out. </br>
-  email: astrodev@future4.com <br>
-	password": 123456
-</p>
+  ### Pre Made User Info
+  Here is a pre made user info in case you want to try it out:
   
-  </br>
+        email: astrodev@future4.com <br>
+        password": 123456
+
   
-  <h2>Functionalities</h2>
-  <p>Here are the main funcionalities that were added to this project:</p>
-  <ul>
-  <li>Login</li>
-  <li>Create an Acconunt</li>
-  <li>Display Restaurants Data from the API</li>
-  <li>Add and Remove restaurants to cart</li>
-  <li>Finish order</li>
-  <li>Edit profile info</li>
-  <li>See order history</li>
-  </ul>
+ 
+  
+  ## Functionalities
+  Here are the main funcionalities that were added to this project:
+
+  * Login
+  * Create an Acconunt
+  * Display Restaurants Data from the API
+  * Add and Remove restaurants to cart
+  * Finish order
+  * Edit profile info
+  * See order history
   
   
-  <h2>API</h2>
-  <p>I used a public API developed by the course company that I am currently doing</p>
-  <p>API Link: <a>https://documenter.getpostman.com/view/7549981/SWTEdGtT</a></p>
   
-  </br>
+  ## API
+ I used a public API developed by the course company that I am currently doing:
+ 
+  [API LINK HERE](https://documenter.getpostman.com/view/7549981/SWTEdGtT)
   
-  <h2>Design</h2>
-  <p>This application's design was done by the tech-ed company, Labenu.</p>
-  <h3>Responsiveness</h3>
-  <p>The application was designed to be a mobile application, therefore it works better on phones. However I adapted a little bit in order for the design to fit better on a laptop.</p>
+
   
-  <h2>Images</h2>
-  <p>This link contains screenshots of the main screens on the project: https://www.notion.so/FutureEats-Screenshots-8c1d56e295a14915b6adafca06eb7942 </p>
+  ## Design
+  This application's design was done by the tech-ed company, Labenu.
+## Responsiveness
+  The application was designed to be a mobile application, therefore it works better on phones. However I adapted a little bit in order for the design to fit better on a laptop.
+  
+  ## Images
+  [Project Screenshots](https://www.notion.so/FutureEats-Screenshots-8c1d56e295a14915b6adafca06eb7942) 
